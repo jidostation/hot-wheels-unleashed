@@ -1,0 +1,33 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F3||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|[CommentBlock]|start the script inside multiplayer lobby|0|1|CommentBlock|||||1|
+2|If Window Active|Chiaki  Stream|1|0|If_Statement|||||4|
+3|[LoopStart]|LoopStart|0|0|Loop|||||6|
+4|Break, Continue, FoundX, FoundY, 0|1472, 161, 1817, 482, *128 .\Screen_20251107153605.png|1|0|ImageSearch|UntilFound|Window|||8|
+5|[CommentBlock]|found lobby image|0|1|CommentBlock|||||16|
+6|[CommentBlock]|release R2 to stop accelerate|0|1|CommentBlock|||||19|
+7|9|{9 Up}|1|1500|Send|||||22|
+8|[CommentBlock]|L1 to force ready|0|1|CommentBlock|||||24|
+9|1|{1 Down}|1|1200|Send|||||27|
+10|1|{1 Up}|1|200|Send|||||29|
+11|[Pause]||1|4000|Sleep|||||31|
+12|[CommentBlock]|TRIANGLE to move to community tracks|0|1|CommentBlock|||||32|
+13|i|{i Down}|1|200|Send|||||35|
+14|i|{i Up}|1|300|Send|||||37|
+15|[CommentBlock]|R1 to move to facourites|0|1|CommentBlock|||||39|
+16|0|{0 Down}|1|200|Send|||||42|
+17|0|{0 Up}|1|300|Send|||||44|
+18|[CommentBlock]|X to select first track|0|1|CommentBlock|||||46|
+19|K|{K Down}|1|200|Send|||||49|
+20|K|{K Up}|1|200|Send|||||51|
+21|[CommentBlock]|loading|0|1|CommentBlock|||||53|
+22|Break, Continue, FoundX, FoundY, 0|100, 56, 460, 299, *128 .\Screen_20251107152609.png|1|0|ImageSearch|UntilFound|Window|||56|
+23|[CommentBlock]|found game started image|0|1|CommentBlock|||||64|
+24|[CommentBlock]|in game |0|1|CommentBlock|||||67|
+25|[CommentBlock]|R2 to accelerate|0|1|CommentBlock|||||70|
+26|9|{9 Down}|1|200|Send|||||73|
+27|[LoopEnd]|LoopEnd|1|0|Loop|||||75|
+28|[End If]|EndIf|1|0|If_Statement|||||76|
+
