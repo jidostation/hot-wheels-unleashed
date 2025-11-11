@@ -1,0 +1,12 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F3||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|If Window Active|Chiaki  Stream|1|0|If_Statement|||||1|
+2|[LoopStart]|LoopStart|0|0|Loop|||||3|
+3|[CommentBlock]|spamming X|0|1|CommentBlock||||||
+4|k|{k Down}|1|1500|Send|||||5|
+5|k|{k Up}|1|200|Send|||||7|
+6|[LoopEnd]|LoopEnd|1|0|Loop|||||9|
+7|[End If]|EndIf|1|0|If_Statement|||||10|
+
